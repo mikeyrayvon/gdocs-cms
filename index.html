@@ -15,7 +15,7 @@
   <body>
     <div id="result"></div>
     <script type="text/javascript">
-      var url = 'https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub';
+      var publishedDocUrl = 'https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub';
 
       var httpRequest = new XMLHttpRequest()
       httpRequest.onreadystatechange = function (data) {
@@ -28,7 +28,7 @@
               }
           }
       }
-      httpRequest.open('GET', url)
+      httpRequest.open('GET', publishedDocUrl)
       httpRequest.send()
     </script>
     <script>
