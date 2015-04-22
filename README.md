@@ -13,3 +13,7 @@ instant website! with cms!
 5. replace the publishedDocUrl string with the link from step 3
 6. put index.html in your root directory
 7. success
+
+in the wild:
+ - http://wandband.info
+ - http://oa4s.biz
