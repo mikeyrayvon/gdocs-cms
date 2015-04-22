@@ -18,4 +18,4 @@ in the wild:
  - http://wandband.info
  - http://oa4s.biz
 
- if u use gdocs-cms send a link to mikey@interglobal.vision so i can put it on this list
+if u use gdocs-cms send a link to mikey@interglobal.vision so i can put it on this list
