@@ -18,11 +18,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="http://example.com/image.jpg" /><!-- replace http://example.com/image.jpg with a link to an image-->
 
-    <style type="text/css"> html, body {margin: 0; padding: 0; width: 100%;height: 100%;} #result {width: 1100px;margin: 50px auto;} img {max-width: 100%} @media screen and (max-width: 1000px) { #result {width: 90%;margin: 5%;} } @media screen and (max-width: 700px) { span, img, iframe { max-width: 100% !important;width: auto !important;height: auto !important;}} </style>
+    <style type="text/css"> html, body {margin: 0; padding: 0; width: 100%;height: 100%;} #contents {width: 1100px;margin: 50px auto;} img {max-width: 100%} @media screen and (max-width: 1000px) { #contents {width: 90%;margin: 5%;} } @media screen and (max-width: 700px) { span, img, iframe { max-width: 100% !important;width: auto !important;height: auto !important;}} </style>
   </head>
   <body>
     <!-- the important part -->
-    <div id="result">
 <?php
       /* 
       replace https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub 
@@ -44,7 +43,6 @@
       $contents = $dom->saveHTML($dom->getElementById('contents'));
       echo $contents;
 ?>
-    </div>
     <!-- Google Analytics: change UA-XXXXX-X to be yr site's ID. -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
