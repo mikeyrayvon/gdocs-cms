@@ -26,14 +26,25 @@
     <!-- the important part -->
     <div id="result">
 <?php
-      include 'simple_html_dom.php';
       /* 
       replace https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub 
       with the link to yr published google doc 
       */
-      $publishedDocUrl = 'https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub';
-      $html = file_get_html($publishedDocUrl);
-      echo $html->find("#contents", 0)
+      $publishedDocUrl = "https://docs.google.com/document/d/1FRxUNqNpB1ntesqVsYNwooo2SCQVVm-A0l6LrMBYyM0/pub";
+
+      $ch = curl_init();
+      $timeout = 5;
+      curl_setopt($ch, CURLOPT_URL, $publishedDocUrl);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+      $html = curl_exec($ch);
+      curl_close($ch);
+      $dom = new DOMDocument();
+      $dom->loadHTML($html);
+      $dom->preserveWhiteSpace = false;
+      $dom->validateOnParse = true;
+      $contents = $dom->saveHTML($dom->getElementById('contents'));
+      echo $contents;
 ?>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be yr site's ID. -->
