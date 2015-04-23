@@ -31,7 +31,7 @@
       replace https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub 
       with the link to yr published google doc 
       */
-      $publishedDocUrl = 'https://docs.google.com/document/d/1FRxUNqNpB1ntesqVsYNwooo2SCQVVm-A0l6LrMBYyM0/pub';
+      $publishedDocUrl = 'https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/pub';
       $html = file_get_html($publishedDocUrl);
       echo $html->find("#contents", 0)
 ?>
