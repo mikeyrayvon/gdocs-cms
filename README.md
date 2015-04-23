@@ -20,5 +20,3 @@ in the wild:
  - http://oa4s.biz
 
 if u use gdocs-cms send a link to mikey@interglobal.vision so i can put it on this list
-
-this uses [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/)

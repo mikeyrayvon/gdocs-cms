@@ -2,8 +2,6 @@
   gdocs-cms by mikey ray-von
   mexico city 2015
   https://github.com/mikeyrayvon/gdocs-cms
-
-  uses http://simplehtmldom.sourceforge.net/
 -->
 <html>
   <head>
