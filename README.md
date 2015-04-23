@@ -12,7 +12,7 @@ instant website! with cms!
 4. open index.html in a text editor
 5. replace the $publishedDocUrl string with the link from step 3
 6. put index.php in your root directory
-7. success
+7. success.
 
 in the wild:
  - http://wandband.info
